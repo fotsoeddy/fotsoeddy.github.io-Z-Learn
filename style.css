@@ -61,7 +61,6 @@ main{
     padding: 104px 90px 104px 90px;
     display: flex;
     flex-direction: column;
-    border-bottom: 4px solid rgba(107, 97, 97, 0.849);
 }
 .line{
     background-color: rgba(19, 75, 19, 0.616);
@@ -69,12 +68,29 @@ main{
     height: 5px;
     margin-top: 250px;
 }
+.line_2{
+    width: 90%;
+    margin: 0 auto;
+    height: 5px;
+    background-color: rgba(19, 75, 19, 0.616);
+
+}
 .descrip-1,.descrip-2{
     display: flex;
     justify-content: space-between;
 
 }
-.descrip-1 h1{
+@keyframes slide{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(0);
+    }
+}
+.animate{
+    animation: slide 2s ease;
+}
+.descrip-1 h1{ 
     font-size: 5rem;
     line-height: 6rem;
     width: 40%;
