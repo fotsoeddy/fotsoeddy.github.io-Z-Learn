@@ -54,7 +54,40 @@ header{
 main{
     background: url('zilo.jpg');
     width: 100%;
-    height: 85vh;
-  
-    
+    position: relative;
+    height: 85vh;  
 } 
+.description{
+    padding: 104px 90px 104px 90px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid rgba(107, 97, 97, 0.849);
+}
+.line{
+    background-color: rgba(19, 75, 19, 0.616);
+    width: 40%;
+    height: 5px;
+    margin-top: 250px;
+}
+.descrip-1,.descrip-2{
+    display: flex;
+    justify-content: space-between;
+
+}
+.descrip-1 h1{
+    font-size: 5rem;
+    line-height: 6rem;
+    width: 40%;
+    font-family: Vollkorn, sans-serif;
+    color: rgba(19, 75, 19, 0.616);
+}
+.descrip-2 p:nth-child(1){
+    width: 40%;
+}
+.descrip-2 p:nth-child(2){
+    width: 40%;
+}
+.descrip-1,.descrip-2 p{
+    font-size: 1.6rem;
+    line-height: 2;
+}
