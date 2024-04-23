@@ -38,16 +38,23 @@ header{
 .nav-bar a.active {
     color: blue;
 }
-.contact-link{
-    font-size: 1rem;
+.contact-link {
+    margin-top: 35px;
+    padding: 0 15px;
     display: flex;
+    justify-content: space-between;
 }
-.contact-link .fas{
-    font-size: 1rem;
-    margin-left: 15px;
-    padding: 14px 16px;
-    display: inline-block;
+
+.contact-link i {
+    font-size: 1.6rem;
+    margin-right: 30px;
+    color: blue; 
 }
-/* main{
-    background: url('');
-} */
+
+main{
+    background: url('zilo.jpg');
+    width: 100%;
+    height: 85vh;
+  
+    
+} 
