@@ -48,7 +48,7 @@ header{
 .contact-link i {
     font-size: 1.6rem;
     margin-right: 30px;
-    color: blue; 
+    color: rgba(19, 75, 19, 0.616); 
 }
 
 main{
@@ -73,6 +73,7 @@ main{
     margin: 0 auto;
     height: 5px;
     background-color: rgba(19, 75, 19, 0.616);
+    margin-bottom: 80px;
 
 }
 .descrip-1,.descrip-2{
@@ -107,3 +108,35 @@ main{
     font-size: 1.6rem;
     line-height: 2;
 }
+.glance{
+    width: 90%;
+    font-family: Vollkorn, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+.counter{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(19, 75, 19, 0.616) ;
+    font-size: 69px;
+    margin-bottom: 20px;
+}
+  .count {
+    font-weight: bold;
+  }
+   
+  .counter-item {
+    text-align: center;
+  }
+  
+  .label {
+    color: black;
+    font-weight: bolder;
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
