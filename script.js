@@ -1,18 +1,40 @@
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-  }
+}
+
 window.addEventListener('scroll', function() {
     const h1 = document.querySelector('.animate-scroll');
     if (isElementInViewport(h1)) {
-      h1.classList.add('animate');
+        h1.classList.add('animate');
     }
-  });
+
+    const school1 = document.getElementById('school-1');
+    if (isElementInViewport(school1)) {
+        school1.classList.add('animate');
+    }
+
+    const school3 = document.getElementById('school-3');
+    if (isElementInViewport(school3)) {
+        school3.classList.add('animate-left-to-right');
+    } 
+    const school4 = document.getElementById('school-4');
+    if (isElementInViewport(school4)) {
+        school4.classList.add('animate');
+    }
+
+    const school6 = document.getElementById('school-6');
+    if (isElementInViewport(school6)) {
+        school6.classList.add('animate-left-to-right');
+    
+    }
+});
+
   function animateValue(id, start, end, duration) {
     let obj = document.getElementById(id);
     let range = end - start;
