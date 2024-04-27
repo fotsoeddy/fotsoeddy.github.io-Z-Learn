@@ -55,12 +55,45 @@ header{
     color: rgba(53, 175, 53, 0.616); 
 }
 
-main{
-    background: url('./img/zilo.jpg');
-    width: 100%;
+/* main {
     position: relative;
-    height: 85vh;  
-} 
+    width: 100%;
+    height: 85vh;
+    overflow: hidden; 
+}
+
+#video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; 
+    height: 100%;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+} */
+main {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden; /* Ensures the video stays within the main container */
+}
+
+#video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; 
+    max-width: 80%; /* Adjust the maximum width as per your requirement */
+    height: 100%;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire main container */
+    object-position: center; /* Centers the video within the main container */
+}
 .description{
     padding: 104px 90px 104px 90px;
     display: flex;
@@ -85,16 +118,31 @@ main{
     justify-content: space-between;
 
 }
-@keyframes slide{
-    from{
-        transform: translateX(-100%);
-    }to{
-        transform: translateX(0);
+
+.animate-scroll {
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
-.animate{
-    animation: slide 2s ease;
+
+.animate {
+    animation: slide 1s ease;
 }
+
+.stay-visible {
+    opacity: 1 !important;
+}
+
 @keyframes slideRightToLeft {
     from {
         transform: translateX(100%);
