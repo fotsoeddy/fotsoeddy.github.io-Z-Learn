@@ -78,7 +78,7 @@ main {
     position: relative;
     width: 100%;
     height: 85vh;
-    overflow: hidden; /* Ensures the video stays within the main container */
+    overflow: hidden; 
 }
 
 #video-background {
@@ -87,12 +87,55 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto; 
-    max-width: 80%; /* Adjust the maximum width as per your requirement */
+    max-width: 80%; 
     height: 100%;
     min-width: 100%; 
     min-height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire main container */
-    object-position: center; /* Centers the video within the main container */
+    object-fit: cover; 
+    object-position: center;
+    z-index: -1;
+}
+.video-content{
+    position: absolute;
+    color: white;
+   top: 25%;
+    left: 12%;
+}
+.video-content h1{
+    margin-top: 20px;
+    font-size: 3.5rem;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.video-content .line{
+    margin-top: 50px;
+    height: 2px;
+    background-color: white;
+    width: 70%;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
 }
 .description{
     padding: 104px 90px 104px 90px;
@@ -108,7 +151,7 @@ main {
 .line_2{
     width: 90%;
     margin: 0 auto;
-    height: 5px;
+    height: 1px;
     background-color: rgba(19, 75, 19, 0.616);
     margin-bottom: 80px;
 
@@ -187,7 +230,7 @@ main {
     justify-content: space-between;
     color: rgba(19, 75, 19, 0.616) ;
     font-size: 69px;
-    margin-bottom: 20px;
+    margin-bottom: 10rem;
 }
   .count {
     font-weight: bold;
@@ -204,6 +247,97 @@ main {
     font-size: 20px;
     margin-top: 5px;
   }
+  .element-help{
+    width: 100%;
+    background-color: rgba(117, 110, 110, 0.178);
+
+    height: auto;
+  }
+.help {
+    margin: 0 137px;
+    padding: 10px 0;
+}
+
+.help-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    
+}
+
+.text {
+    width: 40%;
+    
+}
+
+.text h2 {
+    color: rgba(19, 75, 19, 0.616);
+    font-weight: bolder;
+    font-size: 4.5rem;
+}
+
+.text p {
+    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    
+}
+.text button {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.text button:hover {
+    background-color: rgb(180, 42, 42);
+}
+
+.image-1{
+    
+    height: 575px;
+    width: 780px;
+    background: url('/img/phone\ z-learn\ 5.jpg');
+    background-position: center;
+    background-size: 80% 150%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+    
+
+}
+
+.help-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-3 {
+    /* Add styles for help-3 */
+}
+.help-3 .fa{
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+    font-size: 2rem;
+    color: blue;
+}
+.help-3 h1:nth-child(2){
+    font-size: 3rem;
+    line-height: 4rem;
+    font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width: 80%;
+}
+.help-3 p{
+    color: blue;
+    font-size: 24px;
+    font-family: vollkorn, serif;
+}
+
   .app-program{
     display: flex;
     padding: 104px 90px 104px 90px;
