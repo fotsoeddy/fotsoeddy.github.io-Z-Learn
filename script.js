@@ -59,12 +59,14 @@ window.addEventListener('scroll', function() {
   }
   
   const school1 = document.getElementById('school-1');
-  if (isElementInViewport(school1)) {
+  const school11 = document.getElementById('school-11');
+  if (isElementInViewport(school11)) {
       school1.classList.add('animate');
   }
 
   const school3 = document.getElementById('school-3');
-  if (isElementInViewport(school3)) {
+  const school33 =document.getElementById('school-33');
+  if (isElementInViewport(school33)) {
       school3.classList.add('animate-left-to-right');
   } 
   const school4 = document.getElementById('school-4');
