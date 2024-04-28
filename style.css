@@ -17,7 +17,7 @@ header{
     list-style-type: none;
    margin-top: 25px;
    font-weight: bolder;
-   font-size: 20px;
+   font-size: 15px;
     padding: 0 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     align-items: center;
@@ -53,6 +53,22 @@ header{
 .contact-link i:hover{
     font-size: 2rem;
     color: rgba(53, 175, 53, 0.616); 
+}
+@media  only screen and (max-width : 950px) {
+    header{
+        margin-left: 0;
+        
+    }
+    .nav-bar{
+        display: none;
+    }
+    .contact-link{
+        display: none;
+    }
+    #logo{
+        width: 200px;
+        height: 150px;
+    }
 }
 
 /* main {
