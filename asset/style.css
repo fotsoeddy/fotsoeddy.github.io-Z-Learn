@@ -6,7 +6,7 @@ header{
 
 }
 #logo{
-    background: url('./img/z-learn11.jpg');
+    background: url('/img/z-learn11.jpg');
     width: 100px;
     height: 100px;
     border-radius: 15px;
